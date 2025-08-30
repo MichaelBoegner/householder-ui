@@ -1,5 +1,5 @@
 .navbar {
-  background: #f4f2ec;
+  background: rgb(121, 205, 233);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +9,7 @@
 
 .navbar .logo {
   font-size: 1.5rem;
-  color: #444;
+  color: lightcoral;
 }
 
 .navbar ul {

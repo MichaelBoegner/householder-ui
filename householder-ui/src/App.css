@@ -4,7 +4,6 @@
 }
 
 .app-container {
-  /* border: 5px solid green; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
