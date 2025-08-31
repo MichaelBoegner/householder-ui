@@ -29,25 +29,30 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.button {
+  background: #9bc4b0;
+  padding: 0.8rem 1.5rem;
+  width: 20rem;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: border-color 0.25s;
+  color: #fff;
 }
-button:hover {
-  border-color: #646cff;
+
+.button:hover {
+  background: #7aa691;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
