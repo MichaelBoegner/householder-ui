@@ -1,29 +1,40 @@
 .navbar {
-  background: rgb(121, 205, 233);
+  background: #79CDE9; /* calm muted blue */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #66BBD7; /* slightly darker blue line */
 }
 
+/* Logo */
 .navbar .logo {
-  font-size: 1.5rem;
-  color: lightcoral;
+  font-size: 1.6rem;
+  color: #FAFAF7; /* soft off-white for high contrast */
+  font-family: 'Playfair Display', serif;
 }
 
+/* Nav list */
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
+/* Links */
 .navbar a {
   text-decoration: none;
-  color: #555;
+  color: #FAFAF7; /* off-white to match logo */
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }
 
+/* Hover */
 .navbar a:hover {
-  color: #000;
+  color: #2E3440; /* deep slate gray for readable contrast */
+  border-bottom: 2px solid #b56b45; /* terracotta accent underline */
+  padding-bottom: 2px;
 }
-

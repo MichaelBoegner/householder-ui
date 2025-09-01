@@ -1,32 +1,36 @@
+/* Base page feel */
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background-color: lightblue;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #F9F7F3; /* soft off-white canvas */
 }
 
+/* Heading */
 .about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #b56b45; /* warm terracotta for contrast */
+  font-family: 'Playfair Display', serif;
 }
 
+/* Paragraph block */
 .about p {
-  margin-bottom: 2rem;
+  max-width: 800px;
+  background: #E3EEF2; /* pale aqua panel */
+  padding: 2rem;
+  border-radius: 8px;
+  line-height: 1.7;
   font-size: 1.1rem;
+  color: #2E3440; /* deep slate gray for legibility */
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* subtle lift */
 }
 
-.about button {
-  background: #9bc4b0;
-  padding: 0.8rem 1.5rem;
-  width: 20rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  color: #fff;
-}
 
 .about button:hover {
-  background: #7aa691;
+  background: #7AA691; /* deeper sage on hover */
 }
