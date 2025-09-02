@@ -6,7 +6,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #F9F7F3; /* soft off-white canvas */
+  background-color: #E3EEF2; /* soft off-white canvas */
 }
 
 /* Heading */
@@ -20,7 +20,7 @@
 /* Paragraph block */
 .about p {
   max-width: 800px;
-  background: #E3EEF2; /* pale aqua panel */
+  background: #F9F7F3 ; /* pale aqua panel */
   padding: 2rem;
   border-radius: 8px;
   line-height: 1.7;

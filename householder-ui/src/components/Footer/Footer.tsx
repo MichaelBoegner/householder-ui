@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Householder. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Mindful Householder. All rights reserved.</p>
     </footer>
   )
 }
