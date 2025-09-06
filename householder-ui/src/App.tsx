@@ -6,6 +6,7 @@ import Home from  './pages/Home/Home.tsx'
 import Dharma from './pages/Dharma/Dharma.tsx'
 import Reviews from './pages/Reviews/Reviews.tsx'
 import About from './pages/About/About.tsx'
+import Login from './pages/Login/Login.tsx'
 import './App.css'
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/dharma" element={<Dharma />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <Footer />
