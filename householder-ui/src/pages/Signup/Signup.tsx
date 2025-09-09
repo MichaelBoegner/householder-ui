@@ -10,6 +10,7 @@ interface UserResponse {
 const Signup: React.FC = () => {
   const [username, setUsername] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>(""); 
   const [message, setMessage] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -22,7 +23,7 @@ const Signup: React.FC = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ username, email }),
+        body: JSON.stringify({ username, email, password }), 
       });
 
       if (!response.ok) {
@@ -34,6 +35,7 @@ const Signup: React.FC = () => {
       setMessage(`Account created for ${data.username} (${data.email})`);
       setUsername("");
       setEmail("");
+      setPassword(""); 
     } catch (err: unknown) {
       if (err instanceof Error) {
         setMessage(`Error: ${err.message}`);
@@ -63,6 +65,15 @@ const Signup: React.FC = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <label htmlFor="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
 
