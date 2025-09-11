@@ -13,7 +13,7 @@ import './App.css'
 const App: React.FC = () => {
   return (
     <div className="app-container">
-      <Navbar />
+      <Navbar isLoggedIn={!!localStorage.getItem("token")} />
       <main className="page-container">
         <Routes>
           <Route path="/" element={<Home />} />
