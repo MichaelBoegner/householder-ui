@@ -8,6 +8,8 @@ import Reviews from './pages/Reviews/Reviews.tsx'
 import About from './pages/About/About.tsx'
 import Login from './pages/Login/Login.tsx'
 import Signup from './pages/Signup/Signup.tsx'
+import Dashboard from './pages/Dashboard/Dashboard.tsx'
+import ProtectedRoute from './components/ProtectedRoute.tsx'
 import './App.css'
 
 const App: React.FC = () => {
@@ -22,6 +24,14 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </main>
       <Footer />
