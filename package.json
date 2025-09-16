@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "pixi.js": "^8.13.2",
+    "three": "^0.180.0",
+    "three.js": "^0.77.0"
+  }
+}

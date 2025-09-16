@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
         <li><a href="/">Home</a></li>
         <li><a href="/dharma">Dharma</a></li>
         <li><a href="/reviews">Book Reviews</a></li>
+        <li><a href="/zen-garden">Zen Garden</a></li>
         <li><a href="/about">About</a></li>
         {!token && <li><a href="/login">Login</a></li>}
         {!token && <li><a href="/signup">Signup</a></li>}
